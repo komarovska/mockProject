@@ -1,2 +1,35 @@
-body{background-color:#00f}
-div{background-color:gold;margin-top:20px;height:200px}
+body,p{color:#fff}
+@font-face{font-family:LeagueGothic;src:url(../fonts/LeagueGothic-Regular.eot);src:url(../fonts/LeagueGothic-Regular.woff2) format("woff2"),url(../fonts/LeagueGothic-Regular.woff) format("woff"),url(../fonts/LeagueGothic-Regular.ttf) format("truetype"),url(../fonts/LeagueGothic-Regular.svg) format("svg")}
+@font-face{font-family:OpenSans;font-weight:400;src:url(../fonts/OpenSans-Light.eot);src:url(../fonts/OpenSans-Light.woff2) format("woff2"),url(../fonts/OpenSans-Light.woff) format("woff"),url(../fonts/OpenSans-Light.ttf) format("truetype"),url(../fonts/OpenSans-Light.svg) format("svg")}
+@font-face{font-family:OpenSans;font-weight:700;src:url(../fonts/OpenSans-Extrabold.eot);src:url(../fonts/OpenSans-Extrabold.woff2) format("woff2"),url(../fonts/OpenSans-Extrabold.woff) format("woff"),url(../fonts/OpenSans-Extrabold.ttf) format("truetype"),url(../fonts/OpenSans-Extrabold.svg) format("svg")}
+body{font-family:OpenSans;width:100%;height:100%;position:relative}
+a{text-decoration:none;color:inherit}
+.clearfix{clear:both}
+.pbl__content{max-width:960px;margin:0 auto}
+@media (max-width:960px){.pbl__content{padding:30px 10px 30px 30px}
+.pbl__logo{display:block;padding-top:20px}
+.pbl__nav-menu{line-height:70px}
+.pbl__nav-menu_item{margin-right:6%}
+.pbl__nav-menu_item-last{margin-right:0}
+}
+@media (max-width:600px){.pbl__logo,.pbl__nav-menu{text-align:center;display:block}
+.pbl__content{padding:30px}
+.pbl__logo{margin:0 auto}
+.pbl__nav-menu{width:50%;margin:10px auto;border-left:2px solid #2b2231;border-right:2px solid #2b2231;border-radius:10px;line-height:40px}
+.pbl__nav-menu_item{display:block;margin-right:0;background-color:rgba(62,49,70,.8);text-shadow:none;letter-spacing:1px;border-top:1px solid #2b2231;border-bottom:1px solid #523e5a}
+.pbl__nav-menu_item-first{text-decoration:underline;text-decoration-color:#edbfff;border-radius:10px 10px 0 0}
+.pbl__nav-menu_item-last{border-radius:0 0 10px 10px}
+.pbl__nav-menu_item:hover{text-decoration:none;text-decoration-color:#fefefe;border-bottom:2px solid #edbfff;background-color:rgba(43,34,49,.8)}
+.pbl__home{background-position-x:-1000px;background-position-y:-5px}
+}
+@media (max-width:480px){.pbl__nav-menu{width:70%}
+}
+.pbl__header{position:fixed;width:100%;font-family:LeagueGothic}
+.pbl__logo{display:inline-block;font-size:48px;margin-right:18%;text-shadow:2px 2px 2px #9f9396}
+.pbl__logo-violet{background-image:linear-gradient(to bottom,#745083,#634571,#533b5f,#44314e,#35273d);text-shadow:none;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.pbl__nav-menu{display:inline;line-height:175px}
+.pbl__nav-menu_item{display:inline;font-size:24px;margin-right:5%;text-shadow:2px 2px 2px #9f9396;cursor:pointer}
+.pbl__nav-menu_item:hover{text-decoration:underline;text-decoration-color:#edbfff}
+.pbl__nav-menu_item-last{margin-right:0}
+.pbl__home{min-height:100vh;background-image:url(../img/bcg-mountains.jpg);background-repeat:no-repeat;background-position-x:-550px;background-position-y:-5px}
+*{box-sizing:border-box;margin:0;padding:0}

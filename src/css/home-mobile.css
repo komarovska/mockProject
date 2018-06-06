@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 600px) {
+  .pbl__home {
+    background-position-x: -1000px;
+    background-position-y: -5px; } }

@@ -1,0 +1,104 @@
+@import "variables";
+@import "reset";
+
+@media (max-width: 960px) {
+    .pbl__content {
+        padding: 30px 10px 30px 30px;
+    }
+
+    .pbl__logo {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .pbl__nav-menu {
+        line-height: 70px;
+        &_item {
+            margin-right: 6%;
+            &-last {
+                margin-right: 0;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .pbl__content {
+        padding: 30px;
+    }
+
+    .pbl__logo {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pbl__nav-menu {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        border-left: 2px solid $dark-violet;
+        border-right: 2px solid $dark-violet;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 40px;
+        &_item {
+            display: block;
+            margin-right: 0%;
+            background-color: $normal-violet-rgba;
+            text-shadow: none;
+            letter-spacing: 1px;
+            border-top: 1px solid $dark-violet;
+            border-bottom: 1px solid $border-violet;
+            &-first {
+                text-decoration: underline;
+                text-decoration-color: $title-violet;
+                border-radius: 10px 10px 0 0 ;
+            }
+            &-last {
+                border-radius: 0 0 10px 10px;
+            }
+            &:hover {
+                text-decoration: none;
+                text-decoration-color: $title-light;
+                border-bottom: 2px solid $title-violet;
+                background-color:$dark-violet-rgba;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .pbl__nav-menu {
+        width: 70%;
+    }
+    
+}
+
+/*@media (max-width: 320px) {
+    .pbl__content {
+        padding: 30px;
+    }
+
+    .pbl__logo {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .pbl__nav-menu {
+        line-height: 70px;
+        &_item {
+            margin-right: 6%;
+            &-last {
+                margin-right: 0;
+            }
+        }
+        
+    }
+    
+}*/

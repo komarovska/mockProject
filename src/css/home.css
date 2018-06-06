@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.pbl__home {
+  min-height: 100vh;
+  background-image: url(../img/bcg-mountains.jpg);
+  background-repeat: no-repeat;
+  background-position-x: -550px;
+  background-position-y: -5px; }
