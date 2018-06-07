@@ -1,35 +1,77 @@
-body,p{color:#fff}
 @font-face{font-family:LeagueGothic;src:url(../fonts/LeagueGothic-Regular.eot);src:url(../fonts/LeagueGothic-Regular.woff2) format("woff2"),url(../fonts/LeagueGothic-Regular.woff) format("woff"),url(../fonts/LeagueGothic-Regular.ttf) format("truetype"),url(../fonts/LeagueGothic-Regular.svg) format("svg")}
 @font-face{font-family:OpenSans;font-weight:400;src:url(../fonts/OpenSans-Light.eot);src:url(../fonts/OpenSans-Light.woff2) format("woff2"),url(../fonts/OpenSans-Light.woff) format("woff"),url(../fonts/OpenSans-Light.ttf) format("truetype"),url(../fonts/OpenSans-Light.svg) format("svg")}
 @font-face{font-family:OpenSans;font-weight:700;src:url(../fonts/OpenSans-Extrabold.eot);src:url(../fonts/OpenSans-Extrabold.woff2) format("woff2"),url(../fonts/OpenSans-Extrabold.woff) format("woff"),url(../fonts/OpenSans-Extrabold.ttf) format("truetype"),url(../fonts/OpenSans-Extrabold.svg) format("svg")}
-body{font-family:OpenSans;width:100%;height:100%;position:relative}
+body{font-family:OpenSans;color:#fff;width:100%;height:100%;position:relative}
+.pbl__header,.pbl__home__subtitle,.pbl__home__title{font-family:LeagueGothic}
 a{text-decoration:none;color:inherit}
-.clearfix{clear:both}
-.pbl__content{max-width:960px;margin:0 auto}
-@media (max-width:960px){.pbl__content{padding:30px 10px 30px 30px}
-.pbl__logo{display:block;padding-top:20px}
+.clearfix{display:block;content:'';clear:both}
+.pbl__content{max-width:960px;margin:0 auto;height:100%;overflow:visible}
+@media (max-width:960px){.pbl__content-header{padding:30px 10px 30px 30px}
+.pbl__logo{display:block;padding-top:20px;margin:0}
 .pbl__nav-menu{line-height:70px}
 .pbl__nav-menu_item{margin-right:6%}
 .pbl__nav-menu_item-last{margin-right:0}
 }
-@media (max-width:600px){.pbl__logo,.pbl__nav-menu{text-align:center;display:block}
-.pbl__content{padding:30px}
+@media (max-width:600px){.pbl__logo,.pbl__nav-menu{display:block;text-align:center}
+.pbl__content-header{padding:30px}
 .pbl__logo{margin:0 auto}
-.pbl__nav-menu{width:50%;margin:10px auto;border-left:2px solid #2b2231;border-right:2px solid #2b2231;border-radius:10px;line-height:40px}
-.pbl__nav-menu_item{display:block;margin-right:0;background-color:rgba(62,49,70,.8);text-shadow:none;letter-spacing:1px;border-top:1px solid #2b2231;border-bottom:1px solid #523e5a}
-.pbl__nav-menu_item-first{text-decoration:underline;text-decoration-color:#edbfff;border-radius:10px 10px 0 0}
+.pbl__nav-menu{width:50%;margin:10px auto;border-radius:10px;line-height:40px}
+.pbl__nav-menu_item{display:none;margin-right:0;background-color:rgba(62,49,70,.8);text-shadow:none;letter-spacing:1px;border-top:1px solid #66506f;border-bottom:1px solid #2b2231}
+.pbl__nav-menu_item-first{display:block;text-decoration:underline;text-decoration-color:#edbfff;border:none;border-radius:10px;background:0 0}
+.pbl__nav-menu_item-first-active{background-color:rgba(62,49,70,.8);display:block;border-radius:10px 10px 0 0}
 .pbl__nav-menu_item-last{border-radius:0 0 10px 10px}
 .pbl__nav-menu_item:hover{text-decoration:none;text-decoration-color:#fefefe;border-bottom:2px solid #edbfff;background-color:rgba(43,34,49,.8)}
-.pbl__home{background-position-x:-1000px;background-position-y:-5px}
+.pbl__nav-menu_item.pbl__nav-menu_item-first.pbl__nav-menu_item-active{background-color:rgba(62,49,70,.8)}
+.pbl__nav-menu.pbl__nav-menu__mobile a{display:block}
 }
 @media (max-width:480px){.pbl__nav-menu{width:70%}
+.pbl__content-header{padding-top:45px}
 }
-.pbl__header{position:fixed;width:100%;font-family:LeagueGothic}
+.pbl__header{position:fixed;top:0;left:0;width:100%}
 .pbl__logo{display:inline-block;font-size:48px;margin-right:18%;text-shadow:2px 2px 2px #9f9396}
 .pbl__logo-violet{background-image:linear-gradient(to bottom,#745083,#634571,#533b5f,#44314e,#35273d);text-shadow:none;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .pbl__nav-menu{display:inline;line-height:175px}
 .pbl__nav-menu_item{display:inline;font-size:24px;margin-right:5%;text-shadow:2px 2px 2px #9f9396;cursor:pointer}
 .pbl__nav-menu_item:hover{text-decoration:underline;text-decoration-color:#edbfff}
 .pbl__nav-menu_item-last{margin-right:0}
-.pbl__home{min-height:100vh;background-image:url(../img/bcg-mountains.jpg);background-repeat:no-repeat;background-position-x:-550px;background-position-y:-5px}
+@media (max-width:960px){.pbl__home{background-position-x:-880px;background-position-y:-10px}
+.pbl__slider{height:290px;margin-top:25%}
+.pbl__slider__text{width:47%;height:90%;padding-left:60px;padding-top:10%;overflow:auto}
+.pbl__slider__pic{width:40%;height:130%;margin-top:-25px}
+.pbl__home__title{font-size:44px;padding-top:0}
+.pbl__home__subtitle{font-size:24px}
+.pbl__home__column{font-size:16px}
+}
+@media (max-width:768px){.pbl__slider{margin-top:31%}
+.pbl__slider__text{width:45%;height:80%;padding-left:30px;padding-top:10%;overflow:auto}
+.pbl__slider__pic{width:45%;height:130%;margin-top:-25px}
+.pbl__home__title{font-size:40px;padding-top:0}
+.pbl__home__subtitle{font-size:19px}
+.pbl__home__column{font-size:15px}
+}
+@media (max-width:600px){.pbl__home{background-position-x:-1000px;background-position-y:-5px}
+.pbl__slider{height:270px;margin-top:35%}
+.pbl__slider__text{width:55%;height:68.5%;padding-left:20px;padding-top:20%}
+.pbl__slider__pic{width:40%;height:115%;background-size:contain;margin-top:0;margin-right:10px}
+.pbl__home__column{font-size:15px;padding-top:15px}
+}
+@media (max-width:480px){.pbl__home{background-position-x:-1080px;background-position-y:-10px}
+.pbl__slider{margin-top:60%;height:220px}
+.pbl__slider__text{width:100%;padding:0;display:block;margin:15% auto;overflow:auto}
+.pbl__home__column,.pbl__slider__pic{display:none}
+.pbl__home__title{font-size:46px;padding:0 10px;margin:0;text-align:center}
+.pbl__home__subtitle{font-size:24px;text-align:center;line-height:1}
+}
+@media (max-width:320px){.pbl__slider__text{margin:20% auto}
+.pbl__home__title{font-size:42px}
+.pbl__home__subtitle{font-size:22px}
+}
+.pbl__home{min-height:100vh;background-image:url(../img/bcg-mountains.jpg);background-repeat:no-repeat;background-position-x:-550px;background-position-y:-5px;overflow:hidden}
+.pbl__home__title{color:#fefefe;font-size:56px;text-shadow:2px 2px 2px #9f9396}
+.pbl__home__subtitle{color:#edbfff;font-size:34px;line-height:.8;text-shadow:1px 1px 1px #9f9396}
+.pbl__home__column{font-size:18px;padding-top:7px}
+.pbl__slider{height:390px;background-color:rgba(0,0,0,.2);overflow:visible;margin-top:19%}
+.pbl__slider__text{width:55%;float:left;padding-top:8%}
+.pbl__slider__pic{float:right;width:30%;height:100%;margin-right:6%;margin-top:-15px;background-image:url(../img/Iphone.png);background-repeat:no-repeat}
 *{box-sizing:border-box;margin:0;padding:0}
+p{color:#fff}

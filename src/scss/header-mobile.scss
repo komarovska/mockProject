@@ -2,13 +2,14 @@
 @import "reset";
 
 @media (max-width: 960px) {
-    .pbl__content {
+    .pbl__content-header {
         padding: 30px 10px 30px 30px;
     }
 
     .pbl__logo {
         display: block;
         padding-top: 20px;
+        margin: 0;
     }
 
     .pbl__nav-menu {
@@ -25,7 +26,7 @@
 }
 
 @media (max-width: 600px) {
-    .pbl__content {
+    .pbl__content-header {
         padding: 30px;
     }
 
@@ -39,23 +40,29 @@
         display: block;
         width: 50%;
         margin: 10px auto;
-        border-left: 2px solid $dark-violet;
-        border-right: 2px solid $dark-violet;
         border-radius: 10px;
         text-align: center;
         line-height: 40px;
         &_item {
-            display: block;
+            display: none;
             margin-right: 0%;
             background-color: $normal-violet-rgba;
             text-shadow: none;
             letter-spacing: 1px;
-            border-top: 1px solid $dark-violet;
-            border-bottom: 1px solid $border-violet;
+            border-top: 1px solid $border-violet;
+            border-bottom: 1px solid $dark-violet;
             &-first {
+                display: block;
                 text-decoration: underline;
                 text-decoration-color: $title-violet;
-                border-radius: 10px 10px 0 0 ;
+                border: none;
+                border-radius: 10px 10px 10px 10px ;
+                background: transparent;
+                &-active {
+                    background-color: $normal-violet-rgba;
+                    display: block;
+                    border-radius: 10px 10px 0 0 ;
+                }
             }
             &-last {
                 border-radius: 0 0 10px 10px;
@@ -69,13 +76,21 @@
         }
         
     }
-    
+    .pbl__nav-menu_item.pbl__nav-menu_item-first.pbl__nav-menu_item-active {
+        background-color: $normal-violet-rgba;
+    }
+    .pbl__nav-menu.pbl__nav-menu__mobile a {
+        display: block;
+}
 }
 
 @media (max-width: 480px) {
 
     .pbl__nav-menu {
         width: 70%;
+    }
+    .pbl__content-header {
+        padding-top: 45px;
     }
     
 }

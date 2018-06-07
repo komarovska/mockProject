@@ -40,8 +40,12 @@ a {
   color: inherit; }
 
 .clearfix {
+  display: block;
+  content: '';
   clear: both; }
 
 .pbl__content {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%;
+  overflow: visible; }
