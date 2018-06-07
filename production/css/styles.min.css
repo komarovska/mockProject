@@ -1,3 +1,12 @@
+.pbl__about__read,.pbl__about__title{font-family:LeagueGothic;text-shadow:1px 1px 1px #9f9396}
+.pbl__about{width:100%;background:#745083;background:-moz-linear-gradient(180deg,#745083 0,#563d62 50%,#33263a 100%);background:-webkit-linear-gradient(180deg,#745083 0,#563d62 50%,#33263a 100%);background:linear-gradient(180deg,#745083 0,#563d62 50%,#33263a 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#745083", endColorstr="#33263a", GradientType=1)}
+.pbl__about__item{width:33%;display:inline-block;padding:80px 10px 80px 20px}
+.pbl__about__icon{float:left;padding-top:10px}
+.pbl__about__text-container{float:right;width:80%}
+.pbl__about__title{font-size:30px}
+.pbl__about__content{font-size:16px;padding-top:10px;line-height:1.5}
+.pbl__about__read{font-size:18px;text-align:right;letter-spacing:.8px;padding-top:10px}
+.pbl__about__read:hover{cursor:pointer;text-shadow:1px 1px 1px #fff}
 @font-face{font-family:LeagueGothic;src:url(../fonts/LeagueGothic-Regular.eot);src:url(../fonts/LeagueGothic-Regular.woff2) format("woff2"),url(../fonts/LeagueGothic-Regular.woff) format("woff"),url(../fonts/LeagueGothic-Regular.ttf) format("truetype"),url(../fonts/LeagueGothic-Regular.svg) format("svg")}
 @font-face{font-family:OpenSans;font-weight:400;src:url(../fonts/OpenSans-Light.eot);src:url(../fonts/OpenSans-Light.woff2) format("woff2"),url(../fonts/OpenSans-Light.woff) format("woff"),url(../fonts/OpenSans-Light.ttf) format("truetype"),url(../fonts/OpenSans-Light.svg) format("svg")}
 @font-face{font-family:OpenSans;font-weight:700;src:url(../fonts/OpenSans-Extrabold.eot);src:url(../fonts/OpenSans-Extrabold.woff2) format("woff2"),url(../fonts/OpenSans-Extrabold.woff) format("woff"),url(../fonts/OpenSans-Extrabold.ttf) format("truetype"),url(../fonts/OpenSans-Extrabold.svg) format("svg")}
