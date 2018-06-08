@@ -4,6 +4,7 @@
 
 .pbl__about {
   width: 100%;
+  overflow: hidden;
   background: #745083;
   background: -moz-linear-gradient(180deg, #745083 0%, #563d62 50%, #33263a 100%);
   background: -webkit-linear-gradient(180deg, #745083 0%, #563d62 50%, #33263a 100%);

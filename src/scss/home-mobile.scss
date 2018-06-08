@@ -5,6 +5,7 @@
     .pbl__home {
         background-position-x: -880px;
         background-position-y: -10px;
+        
     }
 
     .pbl__slider {
@@ -40,6 +41,7 @@
 }
 
 @media (max-width: 768px) {
+
     .pbl__slider {
         margin-top: 31%;
         &__text {
@@ -59,9 +61,9 @@
     }
 
     .pbl__home {
+        min-height: 89vh;
         &__title {
             font-size: 40px;
-            padding-top: 0;
         }
         &__subtitle {
             font-size: 19px;
