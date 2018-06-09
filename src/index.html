@@ -10,6 +10,8 @@
         <link rel='stylesheet' type='text/css' href='css/home-mobile.css'>
         <link rel='stylesheet' type='text/css' href='css/about.css'>
         <link rel='stylesheet' type='text/css' href='css/about-mobile.css'>
+        <link rel='stylesheet' type='text/css' href='css/blog.css'>
+        <link rel='stylesheet' type='text/css' href='css/blog-mobile.css'>
         <script src='js/main.js'></script>
         <script src='js/task.js'></script>
     </head>
@@ -20,9 +22,9 @@
             <div class='pbl__logo'>PINGBULL<span class='pbl__logo-violet'>ER</span></div>
             
                 <div class='pbl__nav-menu' id='myTopnav'>
-                <a class='pbl__nav-menu_item pbl__nav-menu_item-first' id='firstItem' onclick="myFunction()">HOME</a>
-                <a class='pbl__nav-menu_item'>ABOUT</a>
-                <a class='pbl__nav-menu_item'>BLOG</a>
+                <a href='#pbl-home' class='pbl__nav-menu_item pbl__nav-menu_item-first' id='firstItem' onclick="myFunction()">HOME</a>
+                <a href='#pbl-about' class='pbl__nav-menu_item'>ABOUT</a>
+                <a class='pbl__nav-menu_item' href='#pbl-blog'>BLOG</a>
                 <a class='pbl__nav-menu_item'>PRODUCTS</a>
                 <a class='pbl__nav-menu_item'>LOREM IPSUM</a>
                 <a class='pbl__nav-menu_item pbl__nav-menu_item-last'>DOLOR SIT AMET</a>
@@ -31,7 +33,7 @@
             </div>
         </header>
 
-        <div class='pbl__home'>
+        <div id='pbl-home' class='pbl__home'>
             <div class='pbl__slider'>
                 <div class='pbl__content clearfix'>
                     <div class='pbl__slider__text'>
@@ -45,7 +47,7 @@
             </div>
         </div>
 
-        <div class='pbl__about'>
+        <div id='pbl-about' class='pbl__about'>
             <div class='pbl__content pbl__content-about'>
                 <div class='pbl__about__item clearfix'>
                     <img class='pbl__about__icon' src='img/settings.png'>
@@ -72,8 +74,61 @@
                     </div>
                 </div>   
                 <div class='pbl__about__placeholder'></div>
+            </div>   
+        </div>
+
+
+        <div id='pbl-blog' class='pbl__blog'>
+            <div class='pbl__content pbl__content__blog'>
+                <div class='pbl__blog__quote'>
+                    <div class='pbl__blog__quote_wrap clearfix'>
+                    <img class='pbl__blog__quote_image' src='img/man.png'>
+                    <div class='pbl__blog__quote_title pbl__blog__quote__title-top'>PINGBULLER </div>
+                    <div class='pbl__blog__quote_title  pbl__blog__quote_title-bottom'>STARTS HERE</div>
+                    <div class='pbl__blog__quote_text'>“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</div>
+                    </div>
+                    <div class='pbl__blog__dots-container'>
+                        <div class='pbl__dot'></div>
+                        <div class='pbl__dot pbl__dot-active'></div>
+                        <div class='pbl__dot'></div>
+                        <div class='pbl__dot'></div>
+                    </div>
+                </div>
+                <div class='pbl__blog__posts'>
+                    <div class='pbl__blog__posts_title'>RECENT UPDATES</div>
+                    <div class='pbl__blog__posts__wrap clearfix'>
+                    <div class='pbl__blog__posts__post '>
+                        <img class='pbl__blog__posts__icon' src='img/posticon.png'>
+                        <div class='pbl__blog__posts__post_body '>
+                            <div class='pbl__blog__posts__post_title'>Nunc turpis neque feugiat eget </div>
+                            <div class='pbl__blog__posts__post_text'>Posted by Admin on March 13 2012 in Recent news</div>
+                        </div>
+                    </div>
+                    <div class='pbl__blog__posts__post '>
+                        <img class='pbl__blog__posts__icon' src='img/posticon.png'>
+                        <div class='pbl__blog__posts__post_body '>
+                        <div class='pbl__blog__posts__post_title'>Nunc turpis neque feugiat eget </div>
+                        <div class='pbl__blog__posts__post_text'>Posted by Admin on March 13 2012 in Category</div>
+                        </div>
+                    </div>
+                    <div class='pbl__blog__posts__post'>
+                        <img class='pbl__blog__posts__icon' src='img/posticon.png'>
+                        <div class='pbl__blog__posts__post_body '>
+                        <div class='pbl__blog__posts__post_title'>Nunc turpis neque feugiat eget </div>
+                        <div class='pbl__blog__posts__post_text'>Posted by Admin on March 13 2012 in Blog Updates</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class='pbl__blog__posts_more clearfix'>MORE BLOG POSTS</div>
+                </div>
             </div>
-            
+        </div>
+        <div class='pbl__blog__placeholder'></div>
+        <div class='pbl__blog__companies__wrap'>
+        <div class='pbl__content'>
+        <div class='pbl__blog__companies'>
+        </div>   
+        </div>
         </div>
     </body>
 </html>

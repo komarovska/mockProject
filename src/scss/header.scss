@@ -37,6 +37,7 @@
         &:hover {
             text-decoration: underline;
             text-decoration-color: $title-violet;
+            -webkit-text-decoration-color:  $title-violet;
         }
         &-last {
             margin-right: 0;

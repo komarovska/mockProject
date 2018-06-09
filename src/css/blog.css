@@ -1,3 +1,112 @@
 * {
   margin: 0;
   padding: 0; }
+
+.pbl__content__blog {
+  padding-top: 5%;
+  padding-left: 15px; }
+
+.pbl__blog {
+  min-height: 50vh;
+  overflow: hidden;
+  color: #454545;
+  background-color: #f9f9f9;
+  border-top: 1px solid #cbcbcb; }
+  .pbl__blog__quote {
+    width: 45%;
+    float: left;
+    padding-top: 10px; }
+    .pbl__blog__quote_wrap {
+      background-color: white;
+      position: relative;
+      padding: 30px;
+      box-shadow: 1px 1px 2px #cbcbcb; }
+    .pbl__blog__quote_image {
+      float: left;
+      margin-left: -50px; }
+    .pbl__blog__quote_title {
+      font-family: 'LeagueGothic';
+      font-size: 30px;
+      display: inline-block;
+      padding-left: 20px; }
+      .pbl__blog__quote_title-top {
+        color: #454545; }
+      .pbl__blog__quote_title-bottom {
+        color: #edbfff;
+        padding: 0; }
+    .pbl__blog__quote_text {
+      padding-left: 20px;
+      padding-top: 10px;
+      font-size: 16px; }
+  .pbl__blog__posts {
+    float: right;
+    padding-top: 45px;
+    padding-left: 20px;
+    width: 50%; }
+    .pbl__blog__posts__wrap {
+      padding-top: 10px; }
+    .pbl__blog__posts_title {
+      font-family: 'LeagueGothic';
+      font-size: 30px; }
+    .pbl__blog__posts__icon {
+      float: left; }
+    .pbl__blog__posts__post {
+      height: 70px; }
+      .pbl__blog__posts__post_body {
+        float: right;
+        width: 85%; }
+      .pbl__blog__posts__post_title {
+        font-weight: bold;
+        font-size: 16px; }
+      .pbl__blog__posts__post_text {
+        font-size: 16px; }
+    .pbl__blog__posts_more {
+      float: right;
+      font-family: 'LeagueGothic';
+      font-size: 18px;
+      margin-top: -10px; }
+      .pbl__blog__posts_more:hover {
+        cursor: pointer;
+        text-shadow: 2px 2px 3px #454545; }
+  .pbl__blog__dots-container {
+    margin-left: 43%;
+    padding-top: 18px; }
+  .pbl__blog__placeholder {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cbcbcb;
+    background-color: #f9f9f9; }
+  .pbl__blog__companies {
+    width: 100%;
+    min-height: 150px;
+    background-image: url(../img/logos2.png);
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    background-position-x: 100px;
+    background-position-y: 50px; }
+    .pbl__blog__companies__wrap {
+      background-color: #f9f9f9;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white; }
+
+.pbl__dot {
+  background-color: white;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 1px 1px #cbcbcb; }
+  .pbl__dot-active {
+    background-color: #5a5a5a;
+    border: 2px solid white; }
+
+.pbl__blog__quote_wrap::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 90%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white white transparent transparent; }
