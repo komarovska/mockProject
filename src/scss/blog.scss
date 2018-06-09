@@ -3,11 +3,12 @@
 
 .pbl__content__blog {
     padding-top: 5%;
-    padding-left: 15px;
+    padding-left: 35px;
+    padding-right: 20px;
 }
 
 .pbl__blog {
-    min-height: 50vh;
+    min-height: 30vh;
     overflow: hidden;
     color: $font-grey;
     background-color: $bcg-blog;
@@ -97,18 +98,19 @@
         background-color: $bcg-blog;
     }
     &__companies {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         min-height: 150px;
         background-image: url(../img/logos2.png);
+        background-size: contain;
         background-repeat: no-repeat;
         background-color: $bcg-blog;
-        background-position-x: 100px;
+        //background-position-x: 100px;
         background-position-y: 50px;
         &__wrap {
             background-color: $bcg-blog;
             border-top: 1px solid white;
             border-bottom: 1px solid white;
-            //padding-top: 40px;
         }
     }
 

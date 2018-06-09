@@ -37,8 +37,45 @@
 .pbl__about__content{font-size:16px;padding-top:10px;line-height:1.5}
 .pbl__about__read{font-size:18px;text-align:right;letter-spacing:.8px;padding-top:10px}
 .pbl__about__read:hover{cursor:pointer;text-shadow:1px 1px 1px #fff}
-.pbl__content__blog{padding-top:5%;padding-left:15px}
-.pbl__blog{min-height:50vh;overflow:hidden;background-color:#f9f9f9;border-top:1px solid #cbcbcb}
+@media (max-width:960px){.pbl__blog__quote_text-hidden{display:none}
+.pbl__blog__quote_title{display:block}
+.pbl__blog__quote_title-bottom{padding-left:20px}
+.pbl__blog__posts_text-hidden{display:none}
+}
+@media (max-width:768px){.pbl__content__blog{padding-left:45px;padding-right:10px}
+.pbl__blog__quote{width:43%}
+.pbl__blog__quote_wrap{padding:15px}
+.pbl__blog__quote_image{margin-left:-40px}
+.pbl__blog__quote_title{font-size:24px;padding-left:15px}
+.pbl__blog__quote_text{padding-left:15px;padding-top:5px;font-size:14px}
+.pbl__blog__posts{width:55%;padding-top:25px;padding-left:10px}
+.pbl__blog__posts_title{font-size:24px}
+.pbl__blog__posts__post_body{width:80%}
+.pbl__blog__posts__post_text,.pbl__blog__posts__post_title{font-size:14px}
+.pbl__blog__dots-container{margin-left:35%}
+.pbl__blog__quote_wrap::after{left:80%}
+}
+@media (max-width:600px){.pbl__content__blog{padding-left:45px;padding-right:20px}
+.pbl__blog__quote{width:100%}
+.pbl__blog__quote_title{font-size:28px;display:inline}
+.pbl__blog__quote_title-bottom{padding:0}
+.pbl__blog__quote_text{font-size:15px;padding-left:25px}
+.pbl__blog__quote_text-hidden{display:inline}
+.pbl__blog__quote_wrap::after{display:none}
+.pbl__blog__posts{width:100%;padding-left:0}
+.pbl__blog__posts_title{font-size:28px}
+.pbl__blog__posts__post_text,.pbl__blog__posts__post_title{font-size:15px}
+}
+@media (max-width:320px){.pbl__content__blog{padding-left:20px;padding-right:10px}
+.pbl__blog__quote{width:95%;float:right}
+.pbl__blog__quote_title{font-size:24px}
+.pbl__blog__quote_text{font-size:14px;padding-left:25px}
+.pbl__blog__quote_text-hidden{display:none}
+.pbl__blog__posts_title{font-size:24px}
+.pbl__blog__posts__post_text,.pbl__blog__posts__post_title{font-size:14px}
+}
+.pbl__content__blog{padding-top:5%;padding-left:35px;padding-right:20px}
+.pbl__blog{min-height:30vh;overflow:hidden;background-color:#f9f9f9;border-top:1px solid #cbcbcb}
 .pbl__blog__quote{width:45%;float:left;padding-top:10px}
 .pbl__blog__quote_wrap{background-color:#fff;position:relative;padding:30px;box-shadow:1px 1px 2px #cbcbcb}
 .pbl__blog__quote_image{float:left;margin-left:-50px}
@@ -57,7 +94,7 @@
 .pbl__blog__posts_more:hover{cursor:pointer;text-shadow:2px 2px 3px #454545}
 .pbl__blog__dots-container{margin-left:43%;padding-top:18px}
 .pbl__blog__placeholder{width:100%;height:40px;border-bottom:1px solid #cbcbcb;background-color:#f9f9f9}
-.pbl__blog__companies{width:100%;min-height:150px;background-image:url(../img/logos2.png);background-repeat:no-repeat;background-color:#f9f9f9;background-position-x:100px;background-position-y:50px}
+.pbl__blog__companies{width:90%;margin:0 auto;min-height:150px;background-image:url(../img/logos2.png);background-size:contain;background-repeat:no-repeat;background-color:#f9f9f9;background-position-y:50px}
 .pbl__blog__companies__wrap{background-color:#f9f9f9;border-top:1px solid #fff;border-bottom:1px solid #fff}
 .pbl__dot{background-color:#fff;display:inline-block;width:14px;height:14px;-moz-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;box-shadow:1px 1px #cbcbcb}
 .pbl__dot-active{background-color:#5a5a5a;border:2px solid #fff}
@@ -91,7 +128,7 @@ a{text-decoration:none;color:inherit}
 @media (max-width:480px){.pbl__nav-menu{width:70%}
 .pbl__content-header{padding-top:45px}
 }
-.pbl__header{position:fixed;top:0;left:0;width:100%}
+.pbl__header{position:fixed;top:0;left:0;width:100%;z-index:3}
 .pbl__logo{display:inline-block;font-size:48px;margin-right:18%;text-shadow:2px 2px 2px #9f9396}
 .pbl__logo-violet{background-image:linear-gradient(to bottom,#745083,#634571,#533b5f,#44314e,#35273d);text-shadow:none;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .pbl__nav-menu{display:inline;line-height:175px}

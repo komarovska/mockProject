@@ -1,3 +1,96 @@
 * {
   margin: 0;
   padding: 0; }
+
+@media (max-width: 960px) {
+  .pbl__blog__quote_text-hidden {
+    display: none; }
+  .pbl__blog__quote_title {
+    display: block; }
+    .pbl__blog__quote_title-bottom {
+      padding-left: 20px; }
+  .pbl__blog__posts_text-hidden {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .pbl__content__blog {
+    padding-left: 45px;
+    padding-right: 10px; }
+  .pbl__blog__quote {
+    width: 43%; }
+    .pbl__blog__quote_wrap {
+      padding: 15px; }
+    .pbl__blog__quote_image {
+      margin-left: -40px; }
+    .pbl__blog__quote_title {
+      font-size: 24px;
+      padding-left: 15px; }
+    .pbl__blog__quote_text {
+      padding-left: 15px;
+      padding-top: 5px;
+      font-size: 14px; }
+  .pbl__blog__posts {
+    width: 55%;
+    padding-top: 25px;
+    padding-left: 10px; }
+    .pbl__blog__posts_title {
+      font-size: 24px; }
+    .pbl__blog__posts__post_body {
+      width: 80%; }
+    .pbl__blog__posts__post_title {
+      font-size: 14px; }
+    .pbl__blog__posts__post_text {
+      font-size: 14px; }
+  .pbl__blog__dots-container {
+    margin-left: 35%; }
+  .pbl__blog__quote_wrap::after {
+    left: 80%; } }
+
+@media (max-width: 600px) {
+  .pbl__content__blog {
+    padding-left: 45px;
+    padding-right: 20px; }
+  .pbl__blog__quote {
+    width: 100%; }
+    .pbl__blog__quote_title {
+      font-size: 28px;
+      display: inline; }
+      .pbl__blog__quote_title-bottom {
+        padding: 0; }
+    .pbl__blog__quote_text {
+      font-size: 15px;
+      padding-left: 25px; }
+    .pbl__blog__quote_text-hidden {
+      display: inline; }
+    .pbl__blog__quote_wrap::after {
+      display: none; }
+  .pbl__blog__posts {
+    width: 100%;
+    padding-left: 0; }
+    .pbl__blog__posts_title {
+      font-size: 28px; }
+    .pbl__blog__posts__post_title {
+      font-size: 15px; }
+    .pbl__blog__posts__post_text {
+      font-size: 15px; } }
+
+@media (max-width: 320px) {
+  .pbl__content__blog {
+    padding-left: 20px;
+    padding-right: 10px; }
+  .pbl__blog__quote {
+    width: 95%;
+    float: right; }
+    .pbl__blog__quote_title {
+      font-size: 24px; }
+    .pbl__blog__quote_text {
+      font-size: 14px;
+      padding-left: 25px; }
+    .pbl__blog__quote_text-hidden {
+      display: none; }
+  .pbl__blog__posts_title {
+    font-size: 24px; }
+  .pbl__blog__posts__post_title {
+    font-size: 14px; }
+  .pbl__blog__posts__post_text {
+    font-size: 14px; } }

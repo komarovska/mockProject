@@ -4,10 +4,11 @@
 
 .pbl__content__blog {
   padding-top: 5%;
-  padding-left: 15px; }
+  padding-left: 35px;
+  padding-right: 20px; }
 
 .pbl__blog {
-  min-height: 50vh;
+  min-height: 30vh;
   overflow: hidden;
   color: #454545;
   background-color: #f9f9f9;
@@ -77,12 +78,13 @@
     border-bottom: 1px solid #cbcbcb;
     background-color: #f9f9f9; }
   .pbl__blog__companies {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     min-height: 150px;
     background-image: url(../img/logos2.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: #f9f9f9;
-    background-position-x: 100px;
     background-position-y: 50px; }
     .pbl__blog__companies__wrap {
       background-color: #f9f9f9;
