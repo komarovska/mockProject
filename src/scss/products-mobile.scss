@@ -1,2 +1,52 @@
 @import "variables";
 @import "reset";
+
+@media (max-width: 960px) {
+    .pbl__products {
+        &__logo {
+            display: none;
+        }
+        &__copyright {
+            display: none;
+        }
+        &__item {
+            width: 32%;
+            &-first {
+                padding-left: 20px; 
+            }
+        }
+        &__title {
+            font-size: 24px;
+            &-hidden {
+                display: inline-block;
+            }
+        }
+        &__text {
+            &-hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .pbl__content__products {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .pbl__products {
+        padding-top: 45px;
+        &__item {
+            width: 100%;
+            margin-top: 40px;
+            padding: 0; 
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .pbl__products {
+        padding-top: 25px;
+        padding-bottom: 60px;
+    }
+}

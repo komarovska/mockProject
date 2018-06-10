@@ -1,3 +1,48 @@
 * {
   margin: 0;
   padding: 0; }
+
+.pbl__content__products {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.pbl__products {
+  min-height: 35vh;
+  color: #454545;
+  padding-top: 75px;
+  background-color: #ececec;
+  padding-bottom: 80px; }
+  .pbl__products__item {
+    display: inline-block;
+    width: 33%;
+    padding-left: 20px; }
+    .pbl__products__item-first {
+      padding-left: 0; }
+  .pbl__products__logo {
+    font-size: 48px;
+    color: #cbcbcb;
+    font-family: 'LeagueGothic'; }
+    .pbl__products__logo-effect {
+      color: #454545;
+      position: relative; }
+      .pbl__products__logo-effect::after {
+        content: url(../img/effect2.png);
+        position: absolute;
+        top: -13px;
+        left: 95px; }
+  .pbl__products__title {
+    font-family: 'LeagueGothic';
+    font-size: 30px;
+    margin-bottom: 10px; }
+    .pbl__products__title-hidden {
+      display: none; }
+  .pbl__products__copyright {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #c5c5c5;
+    text-shadow: 1px 1px #fff;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .pbl__products__text-hidden {
+    display: inline; }
