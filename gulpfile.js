@@ -12,6 +12,7 @@ var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
+var deploy = require('gulp-gh-pages');
 
 
 gulp.task('sass', function() {
@@ -77,6 +78,12 @@ gulp.task('scripts', function() {
     stream.concat(js, jsDeps);*/
 });
 
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+      .pipe(deploy())
+  });
+
+  
 gulp.task('images', function () {
     return gulp.src(['src/img/*', 'src/!img/*.db'])
         .pipe(cache(imagemin({
