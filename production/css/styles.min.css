@@ -153,6 +153,7 @@ a{text-decoration:none;color:inherit}
 .pbl__nav-menu_item-last{margin-right:0}
 }
 @media (max-width:600px){.pbl__logo,.pbl__nav-menu{display:block;text-align:center}
+.pbl__header{position:absolute}
 .pbl__content-header{padding:30px}
 .pbl__logo{margin:0 auto}
 .pbl__nav-menu{width:50%;margin:10px auto;border-radius:10px;line-height:40px}

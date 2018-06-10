@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 600px) {
+    .pbl__header {
+        position: absolute;
+    }
     .pbl__content-header {
         padding: 30px;
     }
