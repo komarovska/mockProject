@@ -1,0 +1,51 @@
+@import "variables";
+@import "reset";
+
+.pbl__home {
+    min-height: 100vh;
+    background-image: url(../img/bcg-mountains.jpg);
+    background-repeat: no-repeat;
+    background-position-x: -550px;
+    background-position-y: -5px;
+    //padding-top: 20%;
+    overflow: hidden;
+    &__title {
+        font-family: 'LeagueGothic';
+        color: $title-light;
+        font-size: 56px;
+        text-shadow: 2px 2px 2px #9f9396;
+    }
+    &__subtitle {
+        font-family: 'LeagueGothic';
+        color: $title-violet;
+        font-size: 34px;
+        line-height: 0.8;
+        text-shadow: 1px 1px 1px #9f9396;
+    }
+    &__column {
+        font-size: 18px;
+        padding-top: 7px;
+    }
+}
+
+.pbl__slider {
+    height: 390px;
+    background-color: $transparent-home;
+    overflow: visible;
+    margin-top: 19%;
+    &__text {
+        width: 55%;
+        float: left;
+        padding-top: 8%;
+    }
+    &__pic {
+        float: right;
+        width: 30%;
+        height: 100%;
+        margin-right: 6%;
+        margin-top: -15px;
+        background-image: url(../img/Iphone.png);
+        background-repeat: no-repeat;
+    }
+    
+}

@@ -1,0 +1,50 @@
+@import "variables";
+@import "reset";
+
+
+.pbl__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'LeagueGothic';
+    z-index:3;
+    
+}
+
+.pbl__logo {
+    display: inline-block;
+    font-size: 48px;
+    margin-right: 18%;
+    text-shadow: 2px 2px 2px #9f9396;
+    &-violet {
+        background-image: linear-gradient(to bottom, #745083, #634571, #533b5f, #44314e, #35273d);
+        text-shadow: none;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        
+    }
+}
+
+.pbl__nav-menu {
+    display: inline;
+    line-height: 175px;
+    &_item {
+        display: inline;
+        font-size: 24px;
+        margin-right: 5%;
+        text-shadow: 2px 2px 2px #9f9396;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $title-violet;
+            -webkit-text-decoration-color:  $title-violet;
+        }
+        &-last {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+

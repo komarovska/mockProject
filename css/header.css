@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.pbl__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'LeagueGothic';
+  z-index: 3; }
+
+.pbl__logo {
+  display: inline-block;
+  font-size: 48px;
+  margin-right: 18%;
+  text-shadow: 2px 2px 2px #9f9396; }
+  .pbl__logo-violet {
+    background-image: linear-gradient(to bottom, #745083, #634571, #533b5f, #44314e, #35273d);
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.pbl__nav-menu {
+  display: inline;
+  line-height: 175px; }
+  .pbl__nav-menu_item {
+    display: inline;
+    font-size: 24px;
+    margin-right: 5%;
+    text-shadow: 2px 2px 2px #9f9396;
+    cursor: pointer; }
+    .pbl__nav-menu_item:hover {
+      text-decoration: underline;
+      text-decoration-color: #edbfff;
+      -webkit-text-decoration-color: #edbfff; }
+    .pbl__nav-menu_item-last {
+      margin-right: 0; }

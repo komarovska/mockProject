@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.pbl__home {
+  min-height: 100vh;
+  background-image: url(../img/bcg-mountains.jpg);
+  background-repeat: no-repeat;
+  background-position-x: -550px;
+  background-position-y: -5px;
+  overflow: hidden; }
+  .pbl__home__title {
+    font-family: 'LeagueGothic';
+    color: #fefefe;
+    font-size: 56px;
+    text-shadow: 2px 2px 2px #9f9396; }
+  .pbl__home__subtitle {
+    font-family: 'LeagueGothic';
+    color: #edbfff;
+    font-size: 34px;
+    line-height: 0.8;
+    text-shadow: 1px 1px 1px #9f9396; }
+  .pbl__home__column {
+    font-size: 18px;
+    padding-top: 7px; }
+
+.pbl__slider {
+  height: 390px;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: visible;
+  margin-top: 19%; }
+  .pbl__slider__text {
+    width: 55%;
+    float: left;
+    padding-top: 8%; }
+  .pbl__slider__pic {
+    float: right;
+    width: 30%;
+    height: 100%;
+    margin-right: 6%;
+    margin-top: -15px;
+    background-image: url(../img/Iphone.png);
+    background-repeat: no-repeat; }

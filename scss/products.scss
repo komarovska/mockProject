@@ -1,0 +1,58 @@
+@import "variables";
+@import "reset";
+.pbl__content__products {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pbl__products {
+    min-height: 35vh;
+    color: $font-grey;
+    padding-top: 75px;
+    background-color: $bcg-products; 
+    padding-bottom: 80px;
+    &__item {
+        display: inline-block;
+        width: 33%;
+        padding-left: 20px;
+        &-first {
+            padding-left:0;
+        }
+    }
+    &__logo {
+        font-size: 48px;
+        color: $light-grey;
+        font-family: 'LeagueGothic';
+        &-effect {
+            color: $font-grey;
+            position: relative;
+            &::after {
+                content: url(../img/effect2.png);
+                position: absolute;
+                top: -13px;
+                left: 95px;
+            }
+        }
+    }
+    &__title {
+        font-family: 'LeagueGothic';
+        font-size: 30px;
+        margin-bottom: 10px;
+        &-hidden {
+            display: none;
+        }
+    }
+    &__copyright {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-style: italic;
+        font-size: 16px;
+        color: $copyright-grey;
+        text-shadow: 1px 1px #fff;
+        padding-top: 10px; 
+        padding-bottom: 10px;
+    }
+    &__text {
+        &-hidden {
+            display: inline;
+        }
+    }
+}

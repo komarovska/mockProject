@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.pbl__about {
+  width: 100%;
+  overflow: hidden;
+  background: #745083;
+  background: -moz-linear-gradient(180deg, #745083 0%, #563d62 50%, #33263a 100%);
+  background: -webkit-linear-gradient(180deg, #745083 0%, #563d62 50%, #33263a 100%);
+  background: linear-gradient(180deg, #745083 0%, #563d62 50%, #33263a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#745083",endColorstr="#33263a",GradientType=1); }
+  .pbl__about__item {
+    width: 33%;
+    display: inline-block;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 10px;
+    padding-left: 20px; }
+  .pbl__about__icon {
+    float: left;
+    padding-top: 10px; }
+  .pbl__about__text-container {
+    float: right;
+    width: 80%; }
+  .pbl__about__title {
+    font-family: 'LeagueGothic';
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #9f9396; }
+  .pbl__about__content {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 1.5; }
+  .pbl__about__read {
+    font-family: 'LeagueGothic';
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 0.8px;
+    text-shadow: 1px 1px 1px #9f9396;
+    padding-top: 10px; }
+    .pbl__about__read:hover {
+      cursor: pointer;
+      text-shadow: 1px 1px 1px white; }
