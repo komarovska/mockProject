@@ -121,10 +121,31 @@
 @font-face{font-family:OpenSans;font-weight:400;src:url(../fonts/OpenSans-Light.eot);src:url(../fonts/OpenSans-Light.woff2) format("woff2"),url(../fonts/OpenSans-Light.woff) format("woff"),url(../fonts/OpenSans-Light.ttf) format("truetype"),url(../fonts/OpenSans-Light.svg) format("svg")}
 @font-face{font-family:OpenSans;font-weight:700;src:url(../fonts/OpenSans-Extrabold.eot);src:url(../fonts/OpenSans-Extrabold.woff2) format("woff2"),url(../fonts/OpenSans-Extrabold.woff) format("woff"),url(../fonts/OpenSans-Extrabold.ttf) format("truetype"),url(../fonts/OpenSans-Extrabold.svg) format("svg")}
 body{font-family:OpenSans;color:#fff;width:100%;height:100%;position:relative}
-.pbl__header,.pbl__home__subtitle,.pbl__home__title,.pbl__products__logo,.pbl__products__title{font-family:LeagueGothic}
+.pbl__footer__nav_item,.pbl__header,.pbl__home__subtitle,.pbl__home__title,.pbl__products__logo,.pbl__products__title{font-family:LeagueGothic}
 a{text-decoration:none;color:inherit}
 .clearfix{display:block;content:'';clear:both}
 .pbl__content{max-width:960px;margin:0 auto;height:100%;overflow:visible}
+@media (max-width:960px){.pbl__content__footer{padding-left:20px;padding-right:20px}
+.pbl__footer{min-height:150px}
+.pbl__footer__nav{display:block}
+.pbl__footer__trademark{float:none;text-align:right;line-height:2}
+}
+@media (max-width:600px){.pbl__content__footer{padding-left:10px;padding-right:10px}
+.pbl__footer{min-height:150px}
+.pbl__footer__nav_item{font-size:16px;text-shadow:none}
+.pbl__footer__nav_item-last{margin-right:0}
+.pbl__footer__trademark{text-align:center}
+}
+@media (max-width:320px){.pbl__footer{min-height:70px}
+.pbl__footer__nav{display:none}
+.pbl__footer__trademark{line-height:70px}
+}
+.pbl__footer{min-height:100px;background-image:url(../img/bcg-footer.jpg);background-repeat:no-repeat}
+.pbl__footer__nav{display:inline;line-height:100px}
+.pbl__footer__nav_item{display:inline;font-size:20px;margin-right:5%;text-shadow:1px 1px 1px #9f9396;cursor:pointer}
+.pbl__footer__nav_item:hover{text-decoration:underline;text-decoration-color:#edbfff;-webkit-text-decoration-color:#edbfff}
+.pbl__footer__trademark{float:right;line-height:100px;font-size:12px}
+.pbl__footer__trademark-bold{font-weight:700}
 @media (max-width:960px){.pbl__content-header{padding:30px 10px 30px 30px}
 .pbl__logo{display:block;padding-top:20px;margin:0}
 .pbl__nav-menu{line-height:70px}
