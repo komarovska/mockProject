@@ -10,7 +10,9 @@
     .pbl__blog__quote_title-bottom {
       padding-left: 20px; }
   .pbl__blog__posts_text-hidden {
-    display: none; } }
+    display: none; }
+  .pbl__blog__companies__item {
+    margin-right: 30px; } }
 
 @media (max-width: 768px) {
   .pbl__content__blog {
@@ -44,7 +46,11 @@
   .pbl__blog__dots-container {
     margin-left: 35%; }
   .pbl__blog__quote_wrap::after {
-    left: 80%; } }
+    left: 80%; }
+  .pbl__blog__companies {
+    width: 100%; }
+    .pbl__blog__companies__item {
+      margin-right: 15px; } }
 
 @media (max-width: 600px) {
   .pbl__content__blog {
@@ -72,7 +78,23 @@
     .pbl__blog__posts__post_title {
       font-size: 15px; }
     .pbl__blog__posts__post_text {
-      font-size: 15px; } }
+      font-size: 15px; }
+  .pbl__blog__companies {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 30px; }
+    .pbl__blog__companies__item {
+      margin-right: 60px; }
+      .pbl__blog__companies__item-awsm {
+        margin-left: 45px;
+        margin-right: 40px; }
+      .pbl__blog__companies__item-vonzipper {
+        margin-bottom: 35px; } }
+
+@media (max-width: 480px) {
+  .pbl__blog__companies__item {
+    margin-right: 45px;
+    margin-left: 45px; } }
 
 @media (max-width: 320px) {
   .pbl__content__blog {
@@ -93,4 +115,10 @@
   .pbl__blog__posts__post_title {
     font-size: 14px; }
   .pbl__blog__posts__post_text {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .pbl__blog__companies {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .pbl__blog__companies__item {
+      margin-right: 20px;
+      margin-left: 15px; } }
