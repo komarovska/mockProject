@@ -132,7 +132,7 @@ a{text-decoration:none;color:inherit}
 }
 @media (max-width:600px){.pbl__content__footer{padding-left:10px;padding-right:10px}
 .pbl__footer{min-height:150px}
-.pbl__footer__nav_item{font-size:16px;text-shadow:none}
+.pbl__footer__nav_item{margin-right:4%;font-size:16px;text-shadow:none}
 .pbl__footer__nav_item-last{margin-right:0}
 .pbl__footer__trademark{text-align:center}
 }
