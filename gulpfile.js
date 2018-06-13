@@ -12,6 +12,7 @@ var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
+
 //var deploy = require('gulp-gh-pages');
 
 
@@ -82,8 +83,17 @@ gulp.task('scripts', function() {
   //  return gulp.src("./dist/**/*")
    //   .pipe(deploy())
  // });
+ gulp.task('fonts', function() {
+    return gulp.src([
+                    'src/fonts/**.*'])
+            .pipe(gulp.dest('production/fonts/'));
+});
+gulp.task('html', function() {
+    return gulp.src([
+                    'src/**.html'])
+            .pipe(gulp.dest('production/'));
+});
 
-  
 gulp.task('images', function () {
     return gulp.src(['src/img/*', 'src/!img/*.db'])
         .pipe(cache(imagemin({
@@ -94,7 +104,7 @@ gulp.task('images', function () {
         .pipe(size({
         	title: 'size of img'
         }))
-        .pipe(gulp.dest('src/img'));
+        .pipe(gulp.dest('production/img'));
 });
 
 gulp.task('clean', function() {
