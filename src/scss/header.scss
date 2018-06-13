@@ -3,13 +3,11 @@
 
 
 .pbl__header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    font-family: 'LeagueGothic';
-    z-index:3;
-    
+    font-family: 'LeagueGothic';  
 }
 
 .pbl__logo {
@@ -27,8 +25,12 @@
 }
 
 .pbl__nav-menu {
+    list-style: none;
     display: inline;
     line-height: 175px;
+    li {
+        display: inline;
+    }
     &_item {
         display: inline;
         font-size: 24px;

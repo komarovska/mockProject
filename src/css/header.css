@@ -3,12 +3,11 @@
   padding: 0; }
 
 .pbl__header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  font-family: 'LeagueGothic';
-  z-index: 3; }
+  font-family: 'LeagueGothic'; }
 
 .pbl__logo {
   display: inline-block;
@@ -22,8 +21,11 @@
     -webkit-text-fill-color: transparent; }
 
 .pbl__nav-menu {
+  list-style: none;
   display: inline;
   line-height: 175px; }
+  .pbl__nav-menu li {
+    display: inline; }
   .pbl__nav-menu_item {
     display: inline;
     font-size: 24px;
