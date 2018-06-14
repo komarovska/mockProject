@@ -52,6 +52,8 @@ gulp.task('browserSync', function() {
       .pipe(gulpIf('*.js', uglify()))
       .pipe(gulp.dest('app/js/main.min.js'))
   });*/
+
+
 gulp.task('styles', function() {
     return gulp.src(['src/css/*bootstrap*', 'src/css/*.css'])
     	.pipe(concat('styles.min.css'))
@@ -60,6 +62,7 @@ gulp.task('styles', function() {
         }))
         .pipe(gulp.dest('production/css'));
 });
+
 
 gulp.task('scripts', function() {
     return gulp.src(['src/js/*.js', 'src/!js/*jquery*', 'src/!js/*bootstrap*'])
